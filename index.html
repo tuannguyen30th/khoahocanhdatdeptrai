@@ -3,267 +3,377 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <section>
-        <a><img src="image/Frame 168.png" alt="" /></a>
-        <nav>
-          <a href="">Home</a>
-          <a href="">Shop</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+    <header class="header">
+      <section class="header__content">
+        <a class="header__logo"><img src="image/Frame 168.png" alt="logo" /></a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Shop</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
         </nav>
-        <a href=""><img src="image/user.png" alt="" /></a>
-        <a href=""><img src="image/search.png" alt="" /></a>
-        <a href=""><img src="image/heart.png" alt="" /></a>
-        <a href=""><img src="image/shopping-cart.png" alt="" /></a>
-      </section>
-      <section>
-        <div>
-          <img
-            src="image/scandinavian-interior-mockup-wall-decal-background 1.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <p>New Arrival</p>
-          <h1>Discover Our New Collection</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
-          </p>
-          <button>Buy Now</button>
-        </div>
+        <nav class="header__nav">
+          <ul class="header__icons">
+            <li class="header__icons-item">
+              <a href="" class="header__icon-link"
+                ><img src="image/user.png" alt="user"
+              /></a>
+            </li>
+            <li class="header__icons-item">
+              <a href="" class="header__icon-link"
+                ><img src="image/search.png" alt="search"
+              /></a>
+            </li>
+            <li class="header__icons-item">
+              <a href="" class="header__icon-link"
+                ><img src="image/heart.png" alt="like"
+              /></a>
+            </li>
+            <li class="header__icons-item">
+              <a href="" class="header__icon-link"
+                ><img src="image/shopping-cart.png" alt="cart"
+              /></a>
+            </li>
+          </ul>
+        </nav>
       </section>
     </header>
-    <main>
-      <section>
-        <div>
-          <h1>Browse the range</h1>
-          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+    <main class="main">
+      <section class="main__section">
+        <div class="main__image">
+          <img
+            src="image/scandinavian-interior-mockup-wall-decal-background 1.png"
+            alt="background"
+          />
         </div>
-        <div>
+        <div class="main__content">
           <div>
-            <a href=""><img src="image/Mask Group.png" alt="" /></a>
-            <h1>Dining</h1>
-          </div>
-          <div>
-            <a href=""><img src="image/Mask Group (1).png" alt="" /></a>
-            <h1>Living</h1>
-          </div>
-          <div>
-            <a href=""><img src="image/Mask Group (1).png" alt="" /></a>
-            <h1>Bedroom</h1>
+            <h4 class="main__title">New Arrival</h4>
+            <h1 class="main__subtitle">Discover Our New Collection</h1>
+            <p class="main__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <button class="main__button">Buy Now</button>
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h1>Our products</h1>
+      <section class="main__section1">
+        <div class="main__category">
+          <h3 class="main__category-title">Browse the range</h3>
+          <h6 class="main__category-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h6>
         </div>
-        <div>
-          <div>
-            <div>
-              <a href=""><img src="image/image 1.png" alt="" /></a>
-              <div>
-                <p>Syltherine</p>
-                <p>Stylish cafe chair</p>
-              </div>
-              <div>
-                <p>Rp 2.500.000</p>
-                <p>Rp 3.500.000</p>
+        <div class="main__items--introduction">
+          <div class="main__item">
+            <a class="main__item-image" href=""
+              ><img src="image/Mask Group.png" alt="dining"
+            /></a>
+            <h1 class="main__item-name">Dining</h1>
+          </div>
+          <div class="main__item">
+            <a class="main__item-image" href=""
+              ><img src="image/Mask Group (1).png" alt="living"
+            /></a>
+            <h1 class="main__item-name">Living</h1>
+          </div>
+          <div class="main__item">
+            <a class="main__item-image" href=""
+              ><img src="image/Mask Group (1).png" alt="bedroom"
+            /></a>
+            <h1 class="main__item-name">Bedroom</h1>
+          </div>
+        </div>
+      </section>
+      <section class="main__section">
+        <div class="main__category">
+          <h3 class="main__category-title">Our products</h3>
+        </div>
+        <div class="main__items-furniture">
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
               </div>
             </div>
-            <div>
-              <p>30%</p>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
             </div>
           </div>
-          <!-- <div>
-            <div>
-                <Button>Add to cart</Button>
+          <!-- <div class="product-actions">
+            <div class="product-actions__button">
+              <button>Add to cart</button>
             </div>
-            <nav>
-                <a href="">
-                    <img src="image/gridicons_share.png" alt="">
-                    <p>Share</p>
-                </a>
-                <a href="">
-                    <img src="image/compare-svgrepo-com 1.png" alt="">
-                    <p>Compare</p>
-                </a>
-                <a href="">
-                    <img src="image/heart.png" alt="">
-                    <p>Like</p>
-                </a>
+            <nav class="product-actions__nav">
+              F
+              <a href="#" class="product-actions__link">
+                <img
+                  src="image/gridicons_share.png"
+                  alt="Share"
+                  class="product-actions__icon"
+                />
+                <p class="product-actions__text">Share</p>
+              </a>
+              <a href="#" class="product-actions__link">
+                <img
+                  src="image/compare-svgrepo-com 1.png"
+                  alt="Compare"
+                  class="product-actions__icon"
+                />
+                <p class="product-actions__text">Compare</p>
+              </a>
+              <a href="#" class="product-actions__link">
+                <img
+                  src="image/heart.png"
+                  alt="Like"
+                  class="product-actions__icon"
+                />
+                <p class="product-actions__text">Like</p>
+              </a>
             </nav>
           </div> -->
-          <div>
-            <div>
-              <a href=""><img src="image/Images (1).png" alt="" /></a>
-              <div>
-                <p>Lolito</p>
-                <p>Luxury big sofa</p>
-              </div>
-              <div>
-                <p>Rp 7.000.000</p>
-                <p>Rp 14.000.000</p>
-              </div>
-            </div>
-            <div>
-              <p>30%</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <a href=""><img src="image/Images (2).png" alt="" /></a>
-              <div>
-                <p>Respira</p>
-                <p>Outdoor bar table and stool</p>
-              </div>
-              <div>
-                <p>Rp 500.000</p>
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
               </div>
             </div>
-            <div>
-              <p>30%</p>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
             </div>
           </div>
-          <div>
-            <div>
-              <a href=""><img src="image/Images (3).png" alt="" /></a>
-              <div>
-                <p>Grifo</p>
-                <p>Night lamp</p>
-              </div>
-              <div>
-                <p>Rp 1.500.000</p>
-              </div>
-            </div>
-            <div>
-              <p>30%</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <a href=""><img src="image/Images (3).png" alt="" /></a>
-              <div>
-                <p>Muggo</p>
-                <p>Small mug</p>
-              </div>
-              <div>
-                <p>Rp 150.000</p>
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
               </div>
             </div>
-            <div>
-              <p>30%</p>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
             </div>
           </div>
-          <div>
-            <div>
-              <a href=""><img src="image/Images (4).png" alt="" /></a>
-              <div>
-                <p>Pingky</p>
-                <p>Cute bed set</p>
-              </div>
-              <div>
-                <p>Rp 7.000.000</p>
-                <p>Rp 14.000.000</p>
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
               </div>
             </div>
-            <div>
-              <p>30%</p>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
+            </div>
+          </div>
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
+            </div>
+          </div>
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
+            </div>
+          </div>
+          <div class="main__product">
+            <div class="main__product-card">
+              <a href=""><img src="image/image 1.png" alt="products" /></a>
+              <div class="main__product-info">
+                <div class="main__product-nd">
+                  <h4 class="main__product-name">Syltherine</h4>
+                  <p class="main__product_description">Stylish cafe chair</p>
+                </div>
+                <div class="main__product-value">
+                  <p class="main__product-price">Rp 2.500.000</p>
+                  <p class="main__product-oldPrice">Rp 3.500.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="main__product-discount">
+              <p class="main__product-valueDiscount">30%</p>
             </div>
           </div>
         </div>
-        <div>
+        <div class="main__button">
           <button>Show more</button>
         </div>
       </section>
-      <section>
-        <div>
-          <div><p>50+ Beautiful rooms inspiration</p></div>
-          <div>
-            <p>
-              Our designer already made a lot of beautiful prototipe of rooms
-              that inspire youOur designer already made a lot of beautiful
-              prototipe of rooms that inspire you
-            </p>
-          </div>
-          <div>
-            <button>Explore More</button>
-          </div>
+      <section class="main__section4">
+        <div class="main__information">
+          <h2 class="main__information-title">
+            50+ Beautiful rooms inspiration
+          </h2>
+          <p class="main__information-description">
+            Our designer has already created numerous beautiful room prototypes
+            that will inspire you.
+          </p>
+          <button class="main__information-button">Explore More</button>
         </div>
-        <div>
-          <div><img src="image/Rectangle 24.png" alt="" /></div>
-          <div>
-            <div>
+        <div class="main__pictures">
+          <div class="main__picture">
+            <img src="image/Rectangle 24.png" alt="Rectangle" />
+          </div>
+          <div class="main__pictures-information">
+            <div class="main__picture-information">
               <div>
                 <p>01</p>
                 <p>---</p>
                 <p>Bed Room</p>
               </div>
-              <div>
-                <p>Inner Peace</p>
-              </div>
+              <h3>Inner Peace</h3>
             </div>
-            <div>
-              <button><img src="image/right-arrow.png" alt="" /></button>
+            <div class="main__picture-arrow">
+              <button><img src="image/right-arrow.png" alt="arrow" /></button>
             </div>
-          </div>
-          <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
           </div>
         </div>
-        <div></div>
-        <div></div>
+        <div class="main__gallery">
+          <div class="main__gallery-image">
+            <img src="image/image 1.png" alt="Rectangle" />
+          </div>
+          <div class="main__gallery-controls">
+            <button class="button-with-circle"></button>
+            <button class="button-with-circle"></button>
+            <button class="button-with-circle"></button>
+            <button class="button-with-circle"></button>
+          </div>
+        </div>
       </section>
-      <section>
-        <div>
-          <p>Share your setup with</p>
-          <p>#FuniroFurniture</p>
-        </div>
-        <div>
-          <img src="image/Share.png" alt="" />
+
+      <section class="share">
+        <div class="share__icon">
+          <img src="image/Share.png" alt="share" />
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <div>
-          <h1>Funiro</h1>
-          <p>Description1</p>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__info">
+          <h3 class="footer__title">Funiro</h3>
+          <p class="footer__description">
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+          </p>
         </div>
-        <div>
-          <div>
-            <h3>Links</h3>
-            <nav>
-              <a href="">Home</a>
-              <a href="">Shop</a>
-              <a href="">About</a>
-              <a href="">Contact</a>
-            </nav>
+        <div class="footer__links">
+          <div class="footer__links-section">
+            <h3 class="footer__links-title">Links</h3>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Home</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Shop</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">About</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Contact</a>
+              </li>
+            </ul>
           </div>
-          <div>
-            <h3>Help</h3>
-            <nav>
-              <a href="">Payment Options</a>
-              <a href="">Returns</a>
-              <a href="">Privacy Policies</a>
-            </nav>
+          <div class="footer__links-section">
+            <h3 class="footer__links-title">Help</h3>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Payment Options</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Returns</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Privacy Policies</a>
+              </li>
+            </ul>
           </div>
-          <div>
-            <h3>Newsletter</h3>
-            <form action="">
-              <input name="" value="Enter Your Email Address" />
+          <div class="footer__newsletter">
+            <h3 class="footer__newsletter-title">Newsletter</h3>
+            <form class="footer__newsletter-form">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email Address"
+                class="footer__newsletter-input"
+              />
+              <button type="submit" class="footer__newsletter-submit">
+                SUBSCRIBE
+              </button>
             </form>
-            <a href="">Subcribe</a>
           </div>
         </div>
+      </div>
+      <div class="footer__last">
+        <p>2023 furino. All rights reverved</p>
       </div>
     </footer>
   </body>
