@@ -6,10 +6,23 @@
     font-weight: normal;
     font-style: normal; 
 }
+.header{
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
 
+}
+.header__logo{
+    padding-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .header__content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 100%;
 }
 .header__menu
 ,.header__icons{
@@ -28,31 +41,43 @@
 }
 .header__menu{
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 .header__icons{
    justify-content: center;
+   align-items: center;
+   height: 100%;
 }
 .header__icons-item{
     padding: 0 1.5rem;
 }
 
-
+.main{
+    width: 100vw;
+}
 /*section 1*/
+.main__section{
+    height: 80vh;
+    width: 100%;
+}
 .main .main__section .main__image img{
     width: 100%;
-    height: 716.83px;
+    object-fit: cover;
 }
 .main .main__section .main__image{
     position: relative;
-
+    width: 100%;
+    height: 100%;
 }
 .main__content{
     position: absolute;
     background-color: #FFF3E3;
     width: 643px;
     height: 443px;
-    top: 253px;
-    left: 760px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 70px;
     border-radius: 10px;
 }
 .main__content div{
@@ -79,7 +104,7 @@
     margin-bottom: 5px;
 }
 .main__content div .main__button{
-    width: 222px;
+    width: 200px;
     height: 74px;
     padding: 25px, 72px, 25px, 72px;
     gap: 10px;
@@ -90,6 +115,7 @@
     font-weight: 700;
     font-size: 1rem;
 }
+
 .main__content div .main__description{
     font-family: 'Poppins', sans-serif;
     color: #333333;
@@ -97,10 +123,20 @@
     font-size: 18px;
     line-height: 24px;
 }
-/*Section 2*/
+
 .main__section1{
+    margin-top: 200px;
+}
+.main__content div .main__button:hover{
+    background-color: rgb(84, 113, 54);
+    color: #B88E2F;
+}
+/*Section 2*/
+
+.main__section2{
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
 }
 .main__category {
     text-align: center; 
@@ -111,14 +147,14 @@
     font-weight: 700;
     font-size: 2rem;
     line-height: 48px;
+    text-align: center;
+    margin-top: 50px;
 }
 .main__category-description{
     font-family: 'Poppins', sans-serif;
     color: #666666;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
-    margin-top: -30px;
 }
 .main__items--introduction{
     display: flex;
@@ -148,19 +184,20 @@
 }
 .main__items-furniture{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+    height: 100%;
 }
 .main__product{
     text-align: center;
     background-color: #F4F5F7;
     margin: 10px 20px;
-    height: 446px;
+    gap-row: 80px;
 }
 .main__product .main__product-card a img{
     object-fit: cover;
-    width: 252px;
-    height: 301px;
+    width: 100%;
+    height: 100%;
 }
 .main__product-info{
     float: left;
@@ -172,7 +209,7 @@
     font-weight: 600;
     font-size: 24px;
     text-align: center;
-    line-height: 0;
+
 }
 .main__product_description{
     font-family: 'Poppins', sans-serif;
@@ -180,7 +217,6 @@
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    line-height: 0;
 }
 .main__product-nd{
     float: left;
@@ -223,21 +259,26 @@
     font-weight: 500;
     font-size: 16px;
 }
-.main__button{
+.main__button1{
     text-align: center;
     margin-bottom: 50px;
     margin-top: 30px;
+   
 }
-.main__button button{
-    width: 245px;
-    height: 48px;
-    color: #B88E2F;
-    border: 1px solid #B88E2F;
-    background-color: #F4F5F7;
+.main__button1 button{
+    padding: 25px 72px 25px 72px;
+    background-color: #B88E2F;
+    border: none;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1rem;
 }
+.main__button1 button:hover{
+    background-color: rgb(84, 113, 54);
+    color: #B88E2F;
+}
+
 
 /*Section 4*/
 .main__section4{
@@ -408,8 +449,8 @@
 .footer__content{
     display: grid;
     grid-template-columns: 30% 70%;
-    border-top: 1px solid #D9D9D9
-    ;
+    border-top: 1px solid #D9D9D9;
+    gap: 20px;
 }
 .footer__links{
     display: grid;
@@ -441,7 +482,6 @@
     padding-top: 20px;
 }
 .footer__links-title{
-    padding-left: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
